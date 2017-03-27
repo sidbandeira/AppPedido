@@ -26,7 +26,7 @@ public class ProdutoListAdapter extends ArrayAdapter<Produto> {
         } else {
             holder = (ViewHolder)convertView.getTag();
         }
-        holder.txtIdProduto.setText(String.valueOf(produto.idProduto));
+        holder.txtIdProduto.setText(String.valueOf(produto._id));
         holder.txtProdutoDescricao.setText(produto.produtoDescricao);
 
         return convertView;

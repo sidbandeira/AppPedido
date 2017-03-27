@@ -65,12 +65,12 @@ public class ProdutoHttp {
         JSONArray jsonProduto = json.getJSONArray("produtos");
         for (int i = 0; i < jsonProduto.length(); i++) {
             JSONObject jsonProd = jsonProduto.getJSONObject(i);
-            Produto produto = new Produto(
-                    jsonProd.getInt("idproduto"),
-                    jsonProd.getString("produtodescricao"),
-                    jsonProd.getDouble("produtoprecovenda"),
-                    jsonProd.getDouble("produtoprecocusto")
-            );
+            Produto produto = new Produto();
+                    jsonProd.getInt("idproduto");
+                    jsonProd.getString("produtodescricao");
+                    jsonProd.getDouble("produtoprecovenda");
+                    jsonProd.getDouble("produtoprecocusto");
+
             listaDeProduto.add(produto);
         }
         return listaDeProduto;

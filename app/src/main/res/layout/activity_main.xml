@@ -9,11 +9,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.sidnei.apppedido.MainActivity">
 
-    <fragment
+    <!--<fragment-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:name="com.example.sidnei.apppedido.ProdutoListFragment"-->
+        <!--android:id="@+id/listFragment"/>-->
+
+    <Spinner
+        android:id="@+id/spnProduto"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:name="com.example.sidnei.apppedido.ProdutoListFragment"
-        android:id="@+id/listFragment"/>
+        android:layout_height="wrap_content">
+
+    </Spinner>
 
 
 </FrameLayout>
