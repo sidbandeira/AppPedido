@@ -1,6 +1,6 @@
 package com.example.sidnei.apppedido;
 
-public class Produto {
+class Produto {
     public int _id;
     public String produtoDescricao;
     public Double produtoPrecoVenda;
